@@ -1,0 +1,12 @@
+* A namespace is a mapping from names to objects.
+
+* In the expression z.real, real is an attribute of the object z.
+Strictly speaking, references to names in modules are attribute references: in the expression modname.funcname, 
+modname is a module object and funcname is an attribute of it. In this case there happens to be a straightforward
+mapping between the module’s attributes and the global names defined in the module: they share the same namespace!
+
+* Instance Objects
+data attributes correspond to “data members” in C++. Data attributes need not be declared; like local variables, 
+they spring into existence when they are first assigned to. The call x.f() is exactly equivalent to MyClass.f(x). 
+In general, calling a method with a list of n arguments is equivalent to calling the corresponding function with an 
+argument list that is created by inserting the method’s instance object before the first argument.
