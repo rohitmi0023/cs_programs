@@ -1,0 +1,24 @@
+Thinking...
+* Selection sort is all about SELECTING the index of min. element and putting the
+  element at the correct position one by one.
+1st iteration
+* Assume the 1st element index to be the min. index.
+* Compare with the rest n-1 terms with the min_index and find the 
+  min. index among all of them.
+* Place the min. index value at the 1st position
+2nd iteration
+* Assume the 2nd element index to be the min. index.
+* Compare with the rest n-2 terms and find the min. index.
+* Place the min. index value at the 2nd position.
+...
+(n-1)th iterations
+
+Algorithm...
+Selection_Sort(a)
+n = a.length
+for i = 0 to n-1:
+    min_index = i
+    for j = i+1 to n-1:
+        if a[min_index] > a[j]:
+            min_index = j
+    swap a[min_index] with a[i]        

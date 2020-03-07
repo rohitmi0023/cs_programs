@@ -1,0 +1,19 @@
+Thinking...
+* In this sorting algorithm, assume that your numbers are like bubbles.
+1st iteration
+* compare the 1st and 2nd bubble and move the heavier(larger) number upwards(right).
+* Similarly do it till length - 1 times.
+* After the completion of the 1st iteration you will see that the heaviest element has gone to upmost position 
+i.e. the largest element is at the rightmost place 
+2nd iteration
+* Again do the comparison starting beginning till length - 2 times.
+* After this iteration, 2nd most largest element will be at the 2nd rightmost position.
+Similarly, go till n-1 iterations.
+
+Algorithm
+bubble_sort(a)
+n = a.length //calculate the length of the array
+for i = 1 to n //iterations to run n times
+    for j = 0 to n-i //iterations to run n-i times
+        if a[j] > a[j+1]
+            swap them
