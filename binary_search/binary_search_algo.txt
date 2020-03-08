@@ -1,0 +1,20 @@
+Thinking...
+* It works only if the array is a sorted one.
+* We get the mid element of the array, compare it's value.
+* If it's greater then change the start value to mid + 1.
+* If it's lesser then change the end value to mid - 1.
+* If it's equal then return mid.
+* Repeat the above process.
+
+
+Algorithm...
+Binary_Search(a,start, end, value):
+while(start <= end):
+    mid = (start + end)/2
+    if value == a[mid]:
+        return mid
+    if value > a[mid]:
+        return Binary_Search(a, mid + 1, end, value)
+    else:
+        return Binary_Search(a, start, mid - 1, value)
+return -1         
