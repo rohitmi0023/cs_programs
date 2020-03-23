@@ -1,0 +1,52 @@
+Thinkking...
+* Merge sort is a divide-and-conquer algorithm.
+* In this, we break down the lists into a sublist repeatedly till its length is 1.
+* Merging of sublists are done in such a way that sorted list is produced at the end.
+* While merging we compare the first element of both the first sublist and the second sublist.
+* The lesser value is then transerred to the new list and removed from the sublist.
+* The above merging procedure is repeated till both the sublists are empty.
+* The new lists should contain all the elements of both the sublists.
+
+In case you are able to get an idea of merge function, below is a detailed explanation :-
+* Create copies of the sublists.
+* Create three pointers i,j and k
+  i maintains current index of first sublist, starting at 1
+  j maintains current index of second sublist, starting at 1
+  k maintains current index of final list, starting at the initial index
+* Until we reach the end of either sublists, pick the larger among the elements 
+  from them and place them at the correct position in the final list. 
+* When we run out of elements in either sublists, pick up the remaining elements and put in the final list.   
+
+Algorithm...
+mergeSort(A, p, r)
+    if p > r
+        return
+    q = (p + r)/2
+    mergeSort(A, p, q)
+    mergeSort(A, q+1, r)
+    merge(A, p, q, r)
+
+merge(A, p, q, r)
+    l1 = q - p + 1 
+    l2 = r - q
+    for i = 0 to l1
+        L[i] = A[p + i]
+    for j = 0 to l2
+        M[j] = A[q + 1 + j]        
+    i = 0, j = 0, k = p
+
+    while i < l1 and j < l2
+        if L[i] <= M[j]
+            A[k] = L[i]
+            i++ 
+        else 
+            A[k] = M[j]
+            j++
+        k++
+
+    while i < l1
+        A[k] = L[i]
+        i++ and k++
+    while j < l2
+        A[k] = M[j]
+        j++ and k++                    
