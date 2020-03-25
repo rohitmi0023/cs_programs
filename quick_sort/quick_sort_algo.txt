@@ -1,0 +1,28 @@
+Thinking...
+* Quick sort is based on based on the splitting of an array into smaller ones.
+* Quick Sort uses divide and conquer approach.
+* Firstly we select any suitable element as the pivot element(here last index one).
+* Using partition function we will place the pivot at its appropriate postion.
+* We will seperate the arrays into two from pivot and repeat the above procedure till the pivot 
+  is the only element in the array.
+* Partiton function thinking... 
+    * Arrange elements lesser than pivot to one side and elements more than pivot to the other side.  
+    * Now there are two arrays, the low(elements lesser than pivot) and the high(elements more than pivot).
+    * We will swap pivot and the element which is just next to the last element of low array.  
+
+Algorithm...
+quickSort(A, low, high)
+    if low < high
+        pivotIndex = partition(A, low, high)
+        quickSort(A, low, pivotIndex - 1)
+        quickSort(A, pivotIndex + 1, high)
+
+partition(A, low, high)
+    pivot = A[high]
+    i = low - 1
+    for j = low to high - 1
+        if A[j] < pivot
+            i++
+            swap A[i] and A[j]
+    swap A[i+1] and A[high]
+    return i+1

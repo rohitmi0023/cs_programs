@@ -7,6 +7,8 @@ This are the collections of the popular programs taught in Universities in diffe
 * Bubble Sort
 * Insertion Sort
 * Binary Search
+* Merge Sort
+* Quick Sort
 
 ## OOP
 
