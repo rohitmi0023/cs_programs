@@ -1,0 +1,45 @@
+As its better to learn it through diagram hence it better to have a look at:-
+https://www.programiz.com/dsa/heap-sort
+
+Thinking...
+Only the key points I will write below, and I am not going to explain all of them
+* Two things
+    * heapSort function to sort. It will have:
+        * Initiatiating bulding max heap
+        * Creating sorted array
+    * heapify function to
+        * To build a max heap from the array
+        * To build a sorted array from the max heap
+* To build a max heap from heapify function
+    * Create a binary tree
+    * Create a max heap starting from bottom going upwards but simultaneously making the below
+      ones to follow max heap too.
+* To create a sorted array from heapify function
+    * Swap the last node with root node
+    * Remove the last node from heap and place it at its appropriate position in the array
+    * Call heapify function to build max heap for the root node Only
+    * Repeat
+
+Algorithm...
+heapSort(A)
+    n = A.length
+    // To build max heap
+    for i = n to -1
+        heapify(A, n, i)    
+    // To create sorted array    
+    for i = n-1 to 0
+        swap A[0] and A[i]
+        //heapify root Only
+        heapify(A, i, 0)
+
+heapify(A, n, i)
+    largest = i
+    l =2*i+1
+    r = 2*i+2
+    if l < n and A[l] > A[largest]
+        largest = l
+    if r < n and A[r] > A[largest]
+        largest = r
+    if largest != i
+        swap A[i] and A[largest]
+        heapify(A, n, largest)                
