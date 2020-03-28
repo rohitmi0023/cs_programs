@@ -10,6 +10,7 @@ This are the collections of the popular programs taught in Universities in diffe
 * Merge Sort
 * Quick Sort
 * Heap Sort
+* Priority Queue
 
 ## OOP
 

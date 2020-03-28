@@ -1,0 +1,11 @@
+Reference to have enough knowledge on heap:-
+https://en.wikipedia.org/wiki/Heap_(data_structure
+
+Reference to have basic knowledge about priority queue :-
+https://en.wikipedia.org/wiki/Priority_queue
+
+Reference to heapq library of python:-
+https://docs.python.org/3/library/heapq.html
+
+Code of heapq library of python :-
+https://github.com/python/cpython/blob/master/Lib/heapq.py

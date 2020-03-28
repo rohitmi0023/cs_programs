@@ -1,5 +1,7 @@
 As its better to learn it through diagram hence it better to have a look at:-
-https://www.programiz.com/dsa/heap-sort
+https://www.programiz.com/dsa/heap-sort4
+Learn more about heap data structure:-
+https://en.wikipedia.org/wiki/Heap_(data_structure)
 
 Thinking...
 Only the key points I will write below, and I am not going to explain all of them
