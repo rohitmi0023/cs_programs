@@ -1,6 +1,7 @@
 {
     "workbench.colorCustomizations": {
         "activityBar.background": "#79604c",
+        "activityBar.activeBackground": "#79604c",
         "activityBar.activeBorder": "#253b2f",
         "activityBar.foreground": "#e7e7e7",
         "activityBar.inactiveForeground": "#e7e7e799",
@@ -12,8 +13,34 @@
         "titleBar.inactiveForeground": "#e7e7e799",
         "statusBar.background": "#5a4738",
         "statusBarItem.hoverBackground": "#79604c",
-        "statusBar.foreground": "#e7e7e7"
+        "statusBar.foreground": "#e7e7e7",
+        "editorGroup.border": "#79604c",
+        "panel.border": "#79604c",
+        "sideBar.border": "#79604c"
     },
     "peacock.color": "#5a4738",
-    "python.linting.enabled": false
+    "python.linting.enabled": false,
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "array": "cpp",
+        "bitset": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp",
+        "regex": "cpp",
+        "utility": "cpp",
+        "valarray": "cpp",
+        "vector": "cpp",
+        "string": "cpp",
+        "chrono": "cpp",
+        "algorithm": "cpp",
+        "unordered_map": "cpp",
+        "deque": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "cmath": "cpp",
+        "complex": "cpp",
+        "thread": "cpp",
+        "random": "cpp",
+        "limits": "cpp"
+    }
 }
